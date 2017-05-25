@@ -1,0 +1,33 @@
+﻿Построение начато 25.05.2017 12:07:34.
+     1>Проект "D:\Parallel-Computing-2016-2017\Struchkov\Struchkov\Struchkov.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\Srtuchkov.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       MessageBuildingWithCompiler:
+         Building with Intel(R) C++ Compiler XE 12.0
+       ClCompile:
+         ***** ClCompile (Win32 - Intel C++)
+         Для всех выходных данных обновления не требуется.
+         C:\Program Files (x86)\Intel\ComposerXE-2011\bin\ia32\icl.exe /c /Qvc10 /Qlocation,link,"$(VCInstallDir)\bin" /ZI /nologo /W3 /Od /Qftz- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Qopenmp /Yu"StdAfx.h" /Fp"Debug\Srtuchkov.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP Struchkov.cpp
+         Struchkov.cpp
+       ManifestResourceCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         C:\Program Files (x86)\Intel\ComposerXE-2011\bin\ia32\xilink.exe /OUT:"D:\Parallel-Computing-2016-2017\Struchkov\Debug\Srtuchkov.exe" /INCREMENTAL /NOLOGO libiomp5md.lib pthreadVC2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Srtuchkov.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Parallel-Computing-2016-2017\Struchkov\Debug\Srtuchkov.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Parallel-Computing-2016-2017\Struchkov\Debug\Srtuchkov.lib" /MACHINE:X86 Debug\Srtuchkov.exe.embed.manifest.res
+         Debug\stdafx.obj
+         Debug\Struchkov.obj
+         Debug\SumTree.obj
+         xilink: executing 'link'
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Srtuchkov.exe.embed.manifest" /manifest Debug\Srtuchkov.exe.intermediate.manifest
+         Для всех выходных данных обновления не требуется.
+       LinkEmbedManifest:
+         Для всех выходных данных обновления не требуется.
+         Struchkov.vcxproj -> D:\Parallel-Computing-2016-2017\Struchkov\Debug\Srtuchkov.exe
+       FinalizeBuildStatus:
+         Файл "Debug\Srtuchkov.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\Srtuchkov.lastbuildstate".
+     1>Построение проекта "D:\Parallel-Computing-2016-2017\Struchkov\Struchkov\Struchkov.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:02.99

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Struchkov", "Struchkov\Struchkov.vcxproj", "{D0431B00-F42D-4A72-B0D0-90F6A56BBC72}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestStruchkov", "TestStruchkov\TestStruchkov.vcxproj", "{2AB1104B-62B5-412E-A3C1-D31938DEA40E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34CE90D1-409B-4E2E-857B-2E0D88C66593}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		Struchkov.vsmdi = Struchkov.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Struchkov.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0431B00-F42D-4A72-B0D0-90F6A56BBC72}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D0431B00-F42D-4A72-B0D0-90F6A56BBC72}.Debug|Win32.Build.0 = Debug|Win32
+		{D0431B00-F42D-4A72-B0D0-90F6A56BBC72}.Release|Win32.ActiveCfg = Release|Win32
+		{D0431B00-F42D-4A72-B0D0-90F6A56BBC72}.Release|Win32.Build.0 = Release|Win32
+		{2AB1104B-62B5-412E-A3C1-D31938DEA40E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2AB1104B-62B5-412E-A3C1-D31938DEA40E}.Debug|Win32.Build.0 = Debug|Win32
+		{2AB1104B-62B5-412E-A3C1-D31938DEA40E}.Release|Win32.ActiveCfg = Release|Win32
+		{2AB1104B-62B5-412E-A3C1-D31938DEA40E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

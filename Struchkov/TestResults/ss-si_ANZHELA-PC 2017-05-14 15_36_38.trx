@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="11e8b9b1-bab8-4f4a-b66e-3df092e67a62" name="ss-si@ANZHELA-PC 2017-05-14 15:36:38" runUser="ANZHELA-PC\ss-si" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="a85a7cba-6cd1-490f-879a-c359214a491d">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="ss-si_ANZHELA-PC 2017-05-14 15_36_38">
+      <DeploymentItem filename="C:\Users\ss-si\Desktop\Struchkov\Debug\Struchkov.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2017-05-14T15:36:38.0289029+05:00" queuing="2017-05-14T15:36:38.0757816+05:00" start="2017-05-14T15:36:38.0914069+05:00" finish="2017-05-14T15:36:42.4466771+05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="6" executed="6" passed="5" error="1" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestNullTree" storage="c:\users\ss-si\desktop\struchkov\debug\defaulttest.dll" id="336722f7-ed9d-3153-7bbd-a0a15ef52101">
+      <Execution id="795cd7aa-f00d-4abf-8d29-212b3bd20176" />
+      <TestMethod codeBase="C:/Users/ss-si/Desktop/Struchkov/Debug/DefaultTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestStruchkov.UnitTest, DefaultTest, Version=1.0.6343.28084, Culture=neutral, PublicKeyToken=null" name="TestNullTree" />
+    </UnitTest>
+    <UnitTest name="TestLog2" storage="c:\users\ss-si\desktop\struchkov\debug\defaulttest.dll" id="792e5586-eb17-9689-2046-ed6859a89f68">
+      <Execution id="81de906f-2ece-4ba8-aa39-fcf7a688433c" />
+      <TestMethod codeBase="C:/Users/ss-si/Desktop/Struchkov/Debug/DefaultTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestStruchkov.UnitTest, DefaultTest, Version=1.0.6343.28084, Culture=neutral, PublicKeyToken=null" name="TestLog2" />
+    </UnitTest>
+    <UnitTest name="TestSumSerial" storage="c:\users\ss-si\desktop\struchkov\debug\defaulttest.dll" id="77dd7e82-9a3f-c80d-14c5-082b5e8e70a2">
+      <Execution id="aab30adf-3c84-4d4f-a71d-c8710435ca45" />
+      <TestMethod codeBase="C:/Users/ss-si/Desktop/Struchkov/Debug/DefaultTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestStruchkov.UnitTest, DefaultTest, Version=1.0.6343.28084, Culture=neutral, PublicKeyToken=null" name="TestSumSerial" />
+    </UnitTest>
+    <UnitTest name="TestSumParallel" storage="c:\users\ss-si\desktop\struchkov\debug\defaulttest.dll" id="5c1f4678-bbfd-e5e5-2af9-0da40b6cd5e6">
+      <Execution id="7c42ef79-6a6f-4633-adde-592ef98acd22" />
+      <TestMethod codeBase="C:/Users/ss-si/Desktop/Struchkov/Debug/DefaultTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestStruchkov.UnitTest, DefaultTest, Version=1.0.6343.28084, Culture=neutral, PublicKeyToken=null" name="TestSumParallel" />
+    </UnitTest>
+    <UnitTest name="TestSingleTree" storage="c:\users\ss-si\desktop\struchkov\debug\defaulttest.dll" id="f2fcbda4-2b03-5dc7-76e6-d4f09acbdd4a">
+      <Execution id="1ffb7341-5589-46e2-bd24-10a7354a667d" />
+      <TestMethod codeBase="C:/Users/ss-si/Desktop/Struchkov/Debug/DefaultTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestStruchkov.UnitTest, DefaultTest, Version=1.0.6343.28084, Culture=neutral, PublicKeyToken=null" name="TestSingleTree" />
+    </UnitTest>
+    <UnitTest name="TestSumParallelPthread" storage="c:\users\ss-si\desktop\struchkov\debug\defaulttest.dll" id="2b072638-748d-5ee2-dd11-ac0457d46dbd">
+      <Execution id="2ed94fdf-c60b-4b09-9de8-6f0a0c7237fa" />
+      <TestMethod codeBase="C:/Users/ss-si/Desktop/Struchkov/Debug/DefaultTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestStruchkov.UnitTest, DefaultTest, Version=1.0.6343.28084, Culture=neutral, PublicKeyToken=null" name="TestSumParallelPthread" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2b072638-748d-5ee2-dd11-ac0457d46dbd" executionId="2ed94fdf-c60b-4b09-9de8-6f0a0c7237fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="336722f7-ed9d-3153-7bbd-a0a15ef52101" executionId="795cd7aa-f00d-4abf-8d29-212b3bd20176" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c1f4678-bbfd-e5e5-2af9-0da40b6cd5e6" executionId="7c42ef79-6a6f-4633-adde-592ef98acd22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77dd7e82-9a3f-c80d-14c5-082b5e8e70a2" executionId="aab30adf-3c84-4d4f-a71d-c8710435ca45" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="792e5586-eb17-9689-2046-ed6859a89f68" executionId="81de906f-2ece-4ba8-aa39-fcf7a688433c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2fcbda4-2b03-5dc7-76e6-d4f09acbdd4a" executionId="1ffb7341-5589-46e2-bd24-10a7354a667d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2ed94fdf-c60b-4b09-9de8-6f0a0c7237fa" testId="2b072638-748d-5ee2-dd11-ac0457d46dbd" testName="TestSumParallelPthread" computerName="ANZHELA-PC" startTime="2017-05-14T15:36:38.0914069+05:00" endTime="2017-05-14T15:36:42.0247803+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ed94fdf-c60b-4b09-9de8-6f0a0c7237fa">
+      <Output>
+        <ErrorInfo>
+          <Message>Процесс агента был прекращен во время выполнения теста.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="795cd7aa-f00d-4abf-8d29-212b3bd20176" testId="336722f7-ed9d-3153-7bbd-a0a15ef52101" testName="TestNullTree" computerName="ANZHELA-PC" duration="00:00:00.0162094" startTime="2017-05-14T15:36:42.0404036+05:00" endTime="2017-05-14T15:36:42.3216703+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="795cd7aa-f00d-4abf-8d29-212b3bd20176">
+    </UnitTestResult>
+    <UnitTestResult executionId="7c42ef79-6a6f-4633-adde-592ef98acd22" testId="5c1f4678-bbfd-e5e5-2af9-0da40b6cd5e6" testName="TestSumParallel" computerName="ANZHELA-PC" duration="00:00:00.0013354" startTime="2017-05-14T15:36:42.3372972+05:00" endTime="2017-05-14T15:36:42.3372972+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c42ef79-6a6f-4633-adde-592ef98acd22">
+    </UnitTestResult>
+    <UnitTestResult executionId="aab30adf-3c84-4d4f-a71d-c8710435ca45" testId="77dd7e82-9a3f-c80d-14c5-082b5e8e70a2" testName="TestSumSerial" computerName="ANZHELA-PC" duration="00:00:00.0002652" startTime="2017-05-14T15:36:42.3372972+05:00" endTime="2017-05-14T15:36:42.3372972+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aab30adf-3c84-4d4f-a71d-c8710435ca45">
+    </UnitTestResult>
+    <UnitTestResult executionId="81de906f-2ece-4ba8-aa39-fcf7a688433c" testId="792e5586-eb17-9689-2046-ed6859a89f68" testName="TestLog2" computerName="ANZHELA-PC" duration="00:00:00.0007233" startTime="2017-05-14T15:36:42.3529213+05:00" endTime="2017-05-14T15:36:42.3529213+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81de906f-2ece-4ba8-aa39-fcf7a688433c">
+    </UnitTestResult>
+    <UnitTestResult executionId="1ffb7341-5589-46e2-bd24-10a7354a667d" testId="f2fcbda4-2b03-5dc7-76e6-d4f09acbdd4a" testName="TestSingleTree" computerName="ANZHELA-PC" duration="00:00:00.0002352" startTime="2017-05-14T15:36:42.3529213+05:00" endTime="2017-05-14T15:36:42.3529213+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ffb7341-5589-46e2-bd24-10a7354a667d">
+    </UnitTestResult>
+  </Results>
+</TestRun>
