@@ -1,0 +1,6 @@
+Size : 1000
+Threads number : 4
+
+Serial time: 5.00849e-005
+Parallel (tasks) time: 6.15798e-005
+Parallel (pthread) time: 0.00337662

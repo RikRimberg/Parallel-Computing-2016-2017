@@ -140,12 +140,12 @@ double sum_parallel_section(tnode *tree)
 		double sum_l = 0.0; // сумма левого поддерева
 		double sum_r = 0.0; // сумма правого поддерева
 		
-		int a = omp_get_max_active_levels();
+		//int a = omp_get_max_active_levels();
 
 		// при достижении максимальной глубины вложенных параллельных областей
 		if(omp_get_active_level() >= omp_get_max_active_levels())
 			return sum_serial(tree);
-
+		
 		#pragma omp parallel num_threads(2) 
 		{
 			#pragma omp sections
@@ -267,7 +267,7 @@ void* sum_parallel_pthread(void *args)
 }
 
 
-/* Логорифм по основанию 2 (для вычисления max_active_levels) */
+/* Логарифм по основанию 2 (для вычисления max_active_levels) */
 int log2( unsigned int n )
 {
 	return unsigned int(log( (double)n ) / log( 2.0 ));

@@ -11,10 +11,20 @@ int main()
 	system("chcp 1251");						
 	system("cls");
 	srand(time(NULL));	
+	// файл для записи результатов
+	ofstream fout("results.txt");
+
+	//// файлы для мат. статистики
+	//ofstream fout1("results_serial.txt");           // послед
+	//ofstream fout2("results_openmp_tasks.txt");     // задачи
+	//ofstream fout3("results_openmp_sections.txt");  // секции
+	//ofstream fout4("results_pthreads.txt");         // pthreads
+	
 	
 	// размерность массива определяет число узлов в дереве
 	int arr_size = 1000000;						
-	printf("Size : \t\t\t%ld\n", arr_size);	
+	//printf("Size : \t\t\t%ld\n", arr_size);	
+	fout << "Size : " << arr_size << endl;
 	
 	// массив под дерево
 	double *arrForTree = new double[arr_size];	
@@ -60,12 +70,13 @@ int main()
 
 	// задаем число потоков для параллельных алгоритмов
 	int nthreads = omp_get_num_procs(); // omp_get_num_procs() = 4
-	printf("Threads number : \t%i\n\n", nthreads);	
+	//printf("Threads number : \t%i\n\n", nthreads);	
+
+	fout << "Threads number : " << nthreads << endl << endl;
+
 	
 
-	/*
-	** Последовательный алгоритм. 
-	*/
+	/* Последовательный алгоритм.*/
 
 	// старт таймер
 	start_time = omp_get_wtime();	
@@ -74,13 +85,15 @@ int main()
 	// стоп таймер
 	end_time = omp_get_wtime();
 	// вывод времени
-	printf("Serial time: \t\t\t%lf sec.\n", end_time-start_time);	
+	//printf("Serial time: \t\t\t%lf sec.\n", end_time-start_time);	
+
+	fout << "Serial time: " << end_time-start_time << endl;
+	//fout1 << end_time-start_time << endl;
+	
 
 	
 	
-	/* 
-	** Параллельный алгоритм с использованием секций OpenMP.
-	*/
+	/* Параллельный алгоритм с использованием секций OpenMP.*/
 	
 	// включить вложенный параллелизм
 	omp_set_nested(1);
@@ -89,15 +102,16 @@ int main()
 
 		
 	// старт таймер
-	start_time = omp_get_wtime();		
-	
-
+	start_time = omp_get_wtime();
 	// считаем параллельно секциями
 	rootParallelSections->sum = sum_parallel_section(rootParallelSections);
 	// стоп таймер
 	end_time = omp_get_wtime();
 	// вывод времени
-	printf("Parallel (sections) time: \t%lf sec.\n", end_time-start_time);	
+	//printf("Parallel (sections) time: \t%lf sec.\n", end_time-start_time);	
+
+	fout << "Parallel (sections) time: " << end_time-start_time << endl;
+
 	/// проверка на ошибку в вычислениях
 	//printf("Error sum: \t\t\t%lf\n", rootSerial->sum-rootParallelSections->sum);
 	
@@ -116,7 +130,10 @@ int main()
 	// стоп таймер
 	end_time = omp_get_wtime();
 	// вывод времени
-	printf("Parallel (tasks) time: \t\t%lf sec.\n", end_time-start_time);
+	//printf("Parallel (tasks) time: \t\t%lf sec.\n", end_time-start_time);
+
+	fout << "Parallel (tasks) time: " << end_time-start_time << endl;
+	//fout2 << end_time-start_time << endl;
 
 
 	/*
@@ -137,7 +154,10 @@ int main()
 	// стоп таймер
 	end_time = omp_get_wtime();
 	// вывод времени
-	printf("Parallel (pthread) time: \t%lf sec.\n", end_time-start_time);
+	//printf("Parallel (pthread) time: \t%lf sec.\n", end_time-start_time);
+
+	fout << "Parallel (pthread) time: " << end_time-start_time << endl;
+	//fout4 << end_time-start_time << endl;
 
 	//// проверка на ошибку в вычислениях
 	//printf("Error sum: \t\t\t%lf\n", rootSerial->sum-rootParallelPthread->sum);
@@ -149,7 +169,8 @@ int main()
 	//cout << "Parallel tree:" << endl;
 	//printTree(rootParallelTasks);
 
-	system("pause");
+	fout.close();
+	//system("pause");
 
 	// Освобождение памяти.
 	delete[] arrForTree;
